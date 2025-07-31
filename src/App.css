@@ -1,0 +1,336 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container */
+.poker-container {
+  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1e3a8a 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Header */
+.poker-header {
+  background: #1e40af;
+  padding: 1rem;
+  display: flex;
+  border-bottom: 1px solid #3b82f6;
+  align-items: center;
+  justify-content: center;
+  font-size: 3 rem;
+}
+
+.poker-header-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  gap: 1rem;
+}
+
+.poker-freeroll-badge {
+  background: #f97316;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.poker-header-text {
+  font-size: 0.875rem;
+}
+
+.poker-orange-text {
+  color: #fb923c;
+}
+
+/* Main container */
+.poker-main-container {
+  flex: 1;
+  width: 100%;
+  display: flex;
+}
+
+/* Sidebar */
+.poker-sidebar {
+  flex: 1;
+  background: #1e3a8a;
+  padding: 1.5rem;
+  border-right: 1px solid #3b82f6;
+}
+
+.poker-sidebar-section {
+  margin-bottom: 1.5rem;
+}
+
+.poker-blind-valet {
+  color: #fb923c;
+  font-weight: bold;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.poker-players-info {
+  font-size: 0.875rem;
+}
+
+.poker-average-stack {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin-top: 0.25rem;
+}
+
+.poker-section-title {
+  color: #fb923c;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.poker-blind-level {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  background: #1e40af;
+  margin-bottom: 0.5rem;
+}
+
+.poker-blind-level-current {
+  background: #ea580c;
+}
+
+.poker-current-level-display {
+  background: #1e40af;
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
+
+.poker-current-blinds {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.poker-ante-info {
+  font-size: 0.875rem;
+  color: #d1d5db;
+}
+
+/* Timer area */
+.poker-timer-area {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  position: relative;
+}
+
+.poker-time-info {
+  font-size: 2rem;
+  color: #d1d5db;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.poker-music-info {
+  margin-bottom: 2rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Spotify Player Styles */
+.spotify-auth {
+  text-align: center;
+  padding: 2rem;
+  background: #1e40af;
+  border-radius: 0.5rem;
+}
+
+.spotify-auth-btn {
+  background: #1db954;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+.spotify-auth-btn:hover {
+  background: #1ed760;
+}
+
+.spotify-auth-text {
+  color: #d1d5db;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.spotify-player {
+  background: #1e40af;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  color: white;
+}
+
+.spotify-playlists h4 {
+  color: #fb923c;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+.spotify-playlist-select {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: none;
+  background: #1e3a8a;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.spotify-controls {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.spotify-control-btn {
+  background: #fb923c;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+.spotify-control-btn:hover {
+  background: #ea580c;
+}
+
+.poker-main-timer {
+  font-size: 7rem;
+  font-weight: bold;
+  color: #fb923c;
+  margin-bottom: 1rem;
+}
+
+.poker-level-info {
+  font-size: 1.5rem;
+  color: #fb923c;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Controls */
+.poker-controls {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.poker-control-btn {
+  background: #1e40af;
+  border: none;
+  color: white;
+  padding: 0.75rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.poker-control-btn:hover {
+  background: #2563eb;
+}
+
+.poker-play-btn {
+  background: #ea580c;
+  border: none;
+  color: white;
+  padding: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.poker-play-btn:hover {
+  background: #f97316;
+}
+
+/* Cards */
+.poker-card-left {
+  position: absolute;
+  bottom: 5rem;
+  left: 5rem;
+}
+
+.poker-card-right {
+  position: absolute;
+  bottom: 5rem;
+  right: 5rem;
+}
+
+.poker-card {
+  width: auto;
+  height: 5rem;
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 1.5rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .poker-main-container {
+    flex-direction: column;
+  }
+  
+  .poker-sidebar {
+    width: 50%;
+    padding: 1rem;
+    overflow-y: auto;
+    max-height: 100vh;
+  }
+  
+  .poker-main-timer {
+    font-size: 3rem;
+  }
+
+  .poker-card-left,
+  .poker-card-right {
+    display: none;
+  }
+
+  .upcoming-blinds-container {
+    overflow-y: auto;
+  }
+}
