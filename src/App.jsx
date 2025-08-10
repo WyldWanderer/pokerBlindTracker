@@ -135,9 +135,6 @@ const PokerTimer = () => {
         <div className="poker-timer-area">
           {/* Timer Display */}
           <div>
-            <div className="poker-music-info">
-              <SpotifyPlayer />
-            </div>
             <div className="poker-main-timer">
               {formatTime(timeLeft)}
             </div>
