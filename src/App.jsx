@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Play, Pause, SkipForward, RotateCcw } from 'lucide-react';
-import SpotifyPlayer from './SpotifyPlayer';
 import './App.css';
 
 const PokerTimer = () => {
